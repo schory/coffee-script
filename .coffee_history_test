@@ -1,0 +1,16 @@
+1 + 2
+1+1
+1 + 1 #foo
+"1 + 1\n"
+foo = 'foo'
+foobar = "#{foo}bar"
+do ->
+  1 + 1
+do ->＀  1 + 1＀
+a = 1
+do -> a = 2
+a
+a = null
+a ?= 42
+a = b
+a
