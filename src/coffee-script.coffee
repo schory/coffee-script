@@ -44,7 +44,11 @@ exports.compile = compile = withPrettyErrors (code, options) ->
   if options.sourceMap
     map = new SourceMap
 
-  fragments = parser.parse(lexer.tokenize code, options).compileToFragments options
+  fragments = parser.parse(lexer.tokenize code, options)
+
+  # fragments = monkify fragments
+
+  fragments = fragments.compileToFragments options
 
   currentLine = 0
   currentLine += 1 if options.header
