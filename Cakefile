@@ -137,7 +137,7 @@ task 'build:parser', 'rebuild the Jison parser (run build first)', ->
 
 task 'build:browser', 'rebuild the merged script for inclusion in the browser', ->
   code = ''
-  for name in ['helpers', 'rewriter', 'lexer', 'parser', 'scope', 'nodes', 'sourcemap', 'coffee-script', 'browser']
+  for name in ['helpers', 'rewriter', 'lexer', 'parser', 'scope', 'nodes', 'sourcemap', 'coffee-script', 'browser', 'monkey']
     code += """
       require['./#{name}'] = (function() {
         var exports = {}, module = {exports: exports};

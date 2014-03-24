@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #CodeMonkey's code:
 {Code, Value} = require './nodes'
 monkeyFunctions = ['turn','step']
@@ -70,3 +71,7 @@ for exp in fragments.expressions
   console.log 1
 
 #End of CodeMonkey's code
+=======
+# some monkey comment
+monkey=123
+>>>>>>> bf774f02f18df40443d8b78613461da6f8d7c616
